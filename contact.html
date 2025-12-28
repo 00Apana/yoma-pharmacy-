@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Yoma Pharmacy</title>
+    <link rel="stylesheet" href="yoma.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div id="logo">
+                <img src="icon.jpg.png" alt="Yoma Pharmacy Logo" class="logo-icon">
+                <div class="logo-text">
+                    <span class="brand-name">YOMA</span>
+                    <span class="brand-subtitle">Pharmacy</span>
+                </div>
+            </div>
+            
+            <ul id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="prescribe.html">PRESCRIPTION</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Have questions or need assistance? We're here to help! Reach out to us through any of the following channels:</p>
+                
+                <p><strong>📍 Address:</strong><br>
+                123 Healthcare Avenue<br>
+                Medical District<br>
+                City, State 12345</p>
+                
+                <p><strong>📞 Phone:</strong><br>
+                Main: (555) 123-4567<br>
+                Prescription Refills: (555) 123-4568</p>
+                
+                <p><strong>📧 Email:</strong><br>
+                info@yomapharmacy.com<br>
+                prescriptions@yomapharmacy.com</p>
+                
+                <p><strong>🕒 Store Hours:</strong><br>
+                Monday - Friday: 8:00 AM - 8:00 PM<br>
+                Saturday: 9:00 AM - 6:00 PM<br>
+                Sunday: 10:00 AM - 4:00 PM</p>
+
+                <p><strong>🚑 Emergency:</strong><br>
+                For medical emergencies, please call 911 or visit your nearest emergency room.</p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="prescription">Prescription Question</option>
+                            <option value="product">Product Availability</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 YOMA Pharmacy. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="yoma.js"></script>
+</body>
+</html>

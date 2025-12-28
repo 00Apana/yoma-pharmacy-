@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription - Yoma Pharmacy</title>
+    <link rel="stylesheet" href="yoma.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div id="logo">
+                <img src="icon.jpg.png" alt="Yoma Pharmacy Logo" class="logo-icon">
+                <div class="logo-text">
+                    <span class="brand-name">YOMA</span>
+                    <span class="brand-subtitle">Pharmacy</span>
+                </div>
+            </div>
+            
+            <ul id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="prescribe.html">PRESCRIPTION</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="prescription-section">
+        <div class="prescription-content">
+            <h2>Upload Your Prescription</h2>
+            <p>Submit your prescription online and we'll have your medication ready for pickup or delivery. Our licensed pharmacists will review your prescription and contact you if we have any questions.</p>
+            
+            <form class="prescription-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <input type="text" id="address" placeholder="Enter delivery address (optional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="deliveryMethod">Delivery Method *</label>
+                    <select id="deliveryMethod" required>
+                        <option value="">Select delivery method</option>
+                        <option value="pickup">Pickup at Store</option>
+                        <option value="delivery">Home Delivery</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="prescription">Upload Prescription Image *</label>
+                    <input type="file" id="prescription" accept="image/*,.pdf" class="upload-btn" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" placeholder="Any special instructions or allergies we should know about?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Prescription</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 YOMA Pharmacy. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="yoma.js"></script>
+</body>
+</html>
